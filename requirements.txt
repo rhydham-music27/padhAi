@@ -3,7 +3,7 @@
 #   pip install torch==2.4.0 --index-url https://download.pytorch.org/whl/cu124
 # Then install the rest of the requirements below.
 
-torch==2.4.0
+torch==2.6.0
 transformers==4.49.0
 peft==0.17.1
 # IMPORTANT: PEFT 0.17.1 is incompatible with transformers >= 4.55.

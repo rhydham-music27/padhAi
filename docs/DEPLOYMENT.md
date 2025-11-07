@@ -19,6 +19,7 @@
 - CUDA 12.4+ and cuDNN
 - 32GB+ RAM, 100GB+ disk
 
+
 ## 2. Server Requirements
 - Minimum (single user): 16GB VRAM, 16GB RAM, 4 CPU cores
 - Recommended (multi-user): 24GB VRAM, 32GB RAM, 8 CPU cores
@@ -38,7 +39,7 @@ pip install -r requirements.txt
 cp -r /path/to/trained/adapters models/adapters/final
 ```
 
-## 4. Configuration
+#+# 4. Configuration
 ```bash
 cp .env.example .env
 ```
