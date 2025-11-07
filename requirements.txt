@@ -1,0 +1,45 @@
+# Core ML dependencies (pin exact versions for reproducibility)
+# NOTE: On Windows with CUDA 12.4, install PyTorch from the official index first:
+#   pip install torch==2.4.0 --index-url https://download.pytorch.org/whl/cu124
+# Then install the rest of the requirements below.
+
+torch==2.4.0
+transformers==4.49.0
+peft==0.17.1
+# IMPORTANT: PEFT 0.17.1 is incompatible with transformers >= 4.55.
+# Keep transformers pinned to 4.49.0 to avoid breaking changes.
+datasets==4.3.0
+accelerate
+bitsandbytes
+sentencepiece
+protobuf
+
+# Fine-tuning and evaluation
+trl==0.15.2
+evaluate>=0.4.6
+sacrebleu>=2.5.0
+rouge-score>=0.1.2
+# Vision models for image captioning
+# BLIP-2 (Salesforce/blip2-flan-t5-xl) for image captioning - uses existing transformers
+
+# PPT processing & web UI
+python-pptx==1.0.0
+Pillow==11.2.1
+gradio==5.49.1
+
+# Development tools (optional)
+pytest>=8.0.0
+ruff>=0.5.0
+mypy>=1.10.0
+jupyter
+ipykernel
+
+# Data augmentation and NLP utilities
+tqdm
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Optional: Uncomment for advanced augmentation
+# nlpaug>=1.1.11
+# textattack>=0.3.8

@@ -1,0 +1,72 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Testing & linting
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# ML experiment tracking
+mlruns/
+wandb/
+lightning_logs/
+tensorboard/
+tb_logs/
+
+# Data & model artifacts (large files kept out of VCS)
+# These will be populated in later phases of the project
+# Use DVC or cloud storage for dataset/model versioning in production
+data/
+models/
+checkpoints/
+artifacts/
+outputs/
+results/
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# Hugging Face caches
+.cache/
+hf_cache/
+.huggingface/
+
+# Environment & secrets
+.env
+.env.*
+*.secret
+*.key
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Static assets (allow directory but ignore large binaries)
+static/*.pptx
+static/images/extracted/*
